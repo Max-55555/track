@@ -401,7 +401,7 @@ class WoWS(commands.Cog):
                 ship_nc[cmp_nation] = {}
             if cmp_class not in ship_nc[cmp_nation]:
                 ship_nc[cmp_nation][cmp_class] = []
-            ship_nc[cmp_nation][cmp_class].append(cmp.name)
+            ship_nc[cmp_nation][cmp_class].append(name)
             if cmp_nation not in mat:
                 mat[cmp_nation] = {}
             if cmp_class not in mat[cmp_nation]:
@@ -419,12 +419,10 @@ class WoWS(commands.Cog):
             json.dump(ship_nc, fp)
         with open('result.json') as data_file:
             data = json.load(data_file)
-        pprint(data)
+        # pprint(data)
         for key_orig in ship_nc.keys():
             for cmp_class in ship_nc[key_orig].keys():
                 value = ship_nc[key_orig][cmp_class]
-                print(key_orig)
-                print(cmp_class)
                 if cmp_class == 'Destroyer' and all_destroyers == True:
                     continue
                 if cmp_class == 'Cruiser' and all_cruisers == True:
@@ -458,12 +456,52 @@ class WoWS(commands.Cog):
                             break
                     if cmp.params[str2]['visibilityFactor'] >= ship.params[str1]['visibilityFactor']:
                         all_outspot = False
+                        # print(key_orig)
+                        # print(cmp_class + "kekw")
                 if all_outspot == True:
+                    # print(key_orig)
+                    # print(cmp_class)
                     mat[key_orig][cmp_class] = True
                     if cmp_class == 'AirCarrier':
-                         result += (f'All {ship_nations[key_orig]} Aircraft Carriers')
+                         result += (f'All {ship_nations[key_orig]} Aircraft Carriers\n')
                     else:
-                        result += (f'All {ship_nations[key_orig]} {cmp_class}')
+                        result += (f'All {ship_nations[key_orig]} {cmp_class}s\n')
+        for name in self.bot.mapping.keys():
+            cmp = await Ship.convert(ctx, name)
+            lb = _matchmaking[ship.params['level']][0]
+            rb = _matchmaking[ship.params['level']][1]
+            if cmp.name[len(cmp.name)-1] == ')':
+                continue
+            if not cmp.params['level'] >= lb or not cmp.params['level'] <= rb:
+                continue
+            str2 = ""
+            for key, value in cmp.params.items():
+                if key == 'HullDefault':
+                    str2 = 'HullDefault'
+                    break
+                if "A_Hull" in key:
+                    str2 = key
+                    break
+                if "B_Hull" in key:
+                    str2 = key
+                    break
+                if "C_Hull" in key:
+                    str2 = key
+                    break
+            cmp_nation = cmp.params['typeinfo']['nation']
+            cmp_class = cmp.params['typeinfo']['species']
+            if cmp_class == 'Destroyer' and all_destroyers == True:
+                continue
+            if cmp_class == 'Cruiser' and all_cruisers == True:
+                continue
+            if cmp_class == 'Battleship' and all_battleships == True:
+                continue
+            if cmp_class == 'AirCarrier' and all_carriers == True:
+                continue
+            if cmp_nation not in mat or mat[cmp_nation][cmp_class] == False:
+                if cmp.params[str2]['visibilityFactor'] < ship.params[str1]['visibilityFactor']:
+                    result += (f'{name}\n')
+
         await ctx.send(result)
 
 

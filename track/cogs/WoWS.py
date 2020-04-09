@@ -388,13 +388,19 @@ class WoWS(commands.Cog):
                 if "Hull" in key:
                     str2 = key
                     break
-            if cmp.params[str2]['visibilityFactor'] >= ship.params[str1]['visibilityFactor'] and cmp.params['typeinfo']['species'] == 'Destroyer':
+            c1 = ship.params[str1]['visibilityFactor']
+            c2 = cmp.params[str2]['visibilityFactor']
+            if ship.params['level'] >= 8:
+                c1 *= .9
+            if cmp.params['level'] >= 8:
+                c2 *= .9
+            if c2 >= c1 and cmp.params['typeinfo']['species'] == 'Destroyer':
                 all_destroyers = False
-            if cmp.params[str2]['visibilityFactor'] >= ship.params[str1]['visibilityFactor'] and cmp.params['typeinfo']['species'] == 'Cruiser':
+            if c2 >= c1 and cmp.params['typeinfo']['species'] == 'Cruiser':
                 all_cruisers = False
-            if cmp.params[str2]['visibilityFactor'] >= ship.params[str1]['visibilityFactor'] and cmp.params['typeinfo']['species'] == 'Battleship':
+            if c2 >= c1 and cmp.params['typeinfo']['species'] == 'Battleship':
                 all_battleships = False
-            if cmp.params[str2]['visibilityFactor'] >= ship.params[str1]['visibilityFactor'] and cmp.params['typeinfo']['species'] == 'AirCarrier':
+            if c2 >= c1 and cmp.params['typeinfo']['species'] == 'AirCarrier':
                 all_carriers = False
             cmp_nation = cmp.params['typeinfo']['nation']
             cmp_class = cmp.params['typeinfo']['species']
@@ -458,7 +464,13 @@ class WoWS(commands.Cog):
                         if "Hull" in key2:
                             str2 = key2
                             break
-                    if cmp.params[str2]['visibilityFactor'] >= ship.params[str1]['visibilityFactor']:
+                    c1 = ship.params[str1]['visibilityFactor']
+                    c2 = cmp.params[str2]['visibilityFactor']
+                    if ship.params['level'] >= 8:
+                        c1 *= .9
+                    if cmp.params['level'] >= 8:
+                        c2 *= .9
+                    if c2 >= c1:
                         all_outspot = False
                         # print(key_orig)
                         # print(cmp_class + "kekw")
@@ -505,10 +517,15 @@ class WoWS(commands.Cog):
                 continue
             if cmp_class == 'AirCarrier' and all_carriers == True:
                 continue
+            c1 = ship.params[str1]['visibilityFactor']
+            c2 = cmp.params[str2]['visibilityFactor']
+            if ship.params['level'] >= 8:
+                c1 *= .9
+            if cmp.params['level'] >= 8:
+                c2 *= .9
             if cmp_nation not in mat or mat[cmp_nation][cmp_class] == False:
-                if cmp.params[str2]['visibilityFactor'] < ship.params[str1]['visibilityFactor']:
+                if c2 < c1:
                     result += (f'{name}\n')
-
         await ctx.send(result)
 
 

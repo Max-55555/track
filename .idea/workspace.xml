@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f669decb-b04b-4d3e-8f32-5f517829e0e1" name="Default Changelist" comment="Initial files + spot work" />
+    <list default="true" id="f669decb-b04b-4d3e-8f32-5f517829e0e1" name="Default Changelist" comment="Initial files + spot work">
+      <change beforePath="$PROJECT_DIR$/track/cogs/WoWS.py" beforeDir="false" afterPath="$PROJECT_DIR$/track/cogs/WoWS.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/track/result.json" beforeDir="false" afterPath="$PROJECT_DIR$/track/result.json" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,44 +15,18 @@
     <SUITE FILE_PATH="coverage/track_master$dump.coverage" NAME="dump Coverage Results" MODIFIED="1586063684324" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/track/scripts/GameParams" />
     <SUITE FILE_PATH="coverage/track_master$setup.coverage" NAME="setup Coverage Results" MODIFIED="1586104046406" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/track/scripts" />
     <SUITE FILE_PATH="coverage/track_master$bot.coverage" NAME="bot Coverage Results" MODIFIED="1586387760077" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/track" />
+    <SUITE FILE_PATH="coverage/track$bot.coverage" NAME="bot Coverage Results" MODIFIED="1586400964630" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/track" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.virtualenvs/track-master/lib/python3.7/site-packages/discord/ext/commands/bot.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="12375">
-              <caret line="841" selection-start-line="841" selection-end-line="841" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.virtualenvs/track-master/lib/python3.7/site-packages/discord/client.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4215">
-              <caret line="311" selection-start-line="311" selection-end-line="311" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/track/cogs/WoWS.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="862">
-              <caret line="382" column="30" selection-start-line="382" selection-start-column="30" selection-end-line="382" selection-end-column="30" />
+            <state relative-caret-position="-1103">
+              <caret line="403" column="36" lean-forward="true" selection-start-line="403" selection-start-column="36" selection-end-line="403" selection-end-column="36" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.virtualenvs/track-master/lib/python3.7/site-packages/discord/ext/commands/core.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1050">
-              <caret line="82" selection-start-line="82" selection-end-line="82" />
             </state>
           </provider>
         </entry>
@@ -66,13 +43,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/track/config.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+            <state relative-caret-position="60">
+              <caret line="4" column="76" selection-start-line="4" selection-start-column="76" selection-end-line="4" selection-end-column="76" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
@@ -153,9 +130,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/track/cogs/WoWS.py" />
-        <option value="$PROJECT_DIR$/track/config.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/track/config.py" />
+        <option value="$PROJECT_DIR$/track/cogs/WoWS.py" />
       </list>
     </option>
   </component>
@@ -475,7 +452,7 @@
       <workItem from="1586305762829" duration="7134000" />
       <workItem from="1586368531750" duration="19623000" />
       <workItem from="1586392450163" duration="339000" />
-      <workItem from="1586396869535" duration="1698000" />
+      <workItem from="1586396869535" duration="2535000" />
     </task>
     <task id="LOCAL-00001" summary="Initial files + spot work">
       <created>1586383534839</created>
@@ -502,17 +479,18 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37510000" />
+    <option name="totallyTimeSpent" value="38347000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="236" y="23" width="2251" height="1385" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17383431" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17383431" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.35869566" weight="0.37973705" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.35869566" visible="true" weight="0.37973705" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39984533" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -521,7 +499,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.6413044" side_tool="true" weight="0.37973705" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32869297" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32869297" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -676,20 +654,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.virtualenvs/track-master/lib/python3.7/site-packages/discord/ext/commands/bot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12375">
-          <caret line="841" selection-start-line="841" selection-end-line="841" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.virtualenvs/track-master/lib/python3.7/site-packages/discord/client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4215">
-          <caret line="311" selection-start-line="311" selection-end-line="311" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.virtualenvs/track-master/lib/python3.7/site-packages/discord/ext/commands/core.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1050">
@@ -729,27 +693,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/track/cogs/WoWS.py">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="862">
-          <caret line="382" column="30" selection-start-line="382" selection-start-column="30" selection-end-line="382" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="30">
+          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/track/config.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+        <state relative-caret-position="60">
+          <caret line="4" column="76" selection-start-line="4" selection-start-column="76" selection-end-line="4" selection-end-column="76" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$USER_HOME$/.virtualenvs/track-master/lib/python3.7/site-packages/discord/ext/commands/bot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+        <state relative-caret-position="791">
+          <caret line="841" selection-start-line="841" selection-end-line="841" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/track-master/lib/python3.7/site-packages/discord/client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4095">
+          <caret line="303" column="45" lean-forward="true" selection-start-line="303" selection-start-column="45" selection-end-line="303" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/track/cogs/WoWS.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1103">
+          <caret line="403" column="36" lean-forward="true" selection-start-line="403" selection-start-column="36" selection-end-line="403" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

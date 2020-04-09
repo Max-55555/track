@@ -339,7 +339,7 @@ class WoWS(commands.Cog):
         await ctx.send(embed=embed)
     @commands.command(brief='gives a list of ships and classes that outspot and spot a given ship.')
     async def outspot(self, ctx, *, ship: Ship):
-        ship_nations = {'Europe': 'European', 'Germany' : 'German', 'Japan' : 'Japanese', 'USA' : 'American', 'France' : 'French', 'Italy' : 'Italian', 'Russia' : 'Soviet', 'United_Kingdom' : 'British', 'Pan_Asia' : 'Pan Asian'}
+        ship_nations = {'Europe': 'European', 'Germany' : 'German', 'Japan' : 'Japanese', 'USA' : 'American', 'France' : 'French', 'Italy' : 'Italian', 'Russia' : 'Soviet', 'United_Kingdom' : 'British', 'Pan_Asia' : 'Pan Asian', 'Commonwealth' : 'Commonwealth'}
         ship_nc = {}
         mat = {}
         result = (f'Ships that outspot you:\n')
@@ -385,8 +385,9 @@ class WoWS(commands.Cog):
                 if "C_Hull" in key:
                     str2 = key
                     break
-            # print(cmp.name)
-            # print(str1)
+                if "Hull" in key:
+                    str2 = key
+                    break
             if cmp.params[str2]['visibilityFactor'] >= ship.params[str1]['visibilityFactor'] and cmp.params['typeinfo']['species'] == 'Destroyer':
                 all_destroyers = False
             if cmp.params[str2]['visibilityFactor'] >= ship.params[str1]['visibilityFactor'] and cmp.params['typeinfo']['species'] == 'Cruiser':
@@ -454,6 +455,9 @@ class WoWS(commands.Cog):
                         if "C_Hull" in key2:
                             str2 = key2
                             break
+                        if "Hull" in key2:
+                            str2 = key2
+                            break
                     if cmp.params[str2]['visibilityFactor'] >= ship.params[str1]['visibilityFactor']:
                         all_outspot = False
                         # print(key_orig)
@@ -486,6 +490,9 @@ class WoWS(commands.Cog):
                     str2 = key
                     break
                 if "C_Hull" in key:
+                    str2 = key
+                    break
+                if "Hull" in key:
                     str2 = key
                     break
             cmp_nation = cmp.params['typeinfo']['nation']

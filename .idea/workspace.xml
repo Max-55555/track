@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f669decb-b04b-4d3e-8f32-5f517829e0e1" name="Default Changelist" comment="Initial files + spot work">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/track-master-copy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/track.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/track/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/track/config.py" afterDir="false" />
-    </list>
+    <list default="true" id="f669decb-b04b-4d3e-8f32-5f517829e0e1" name="Default Changelist" comment="Initial files + spot work" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,18 +15,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/track/bot.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="36" selection-start-line="36" selection-end-line="36" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/.virtualenvs/track-master/lib/python3.7/site-packages/discord/ext/commands/bot.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -81,11 +63,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/track/config.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
               <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -164,6 +155,7 @@
       <list>
         <option value="$PROJECT_DIR$/track/cogs/WoWS.py" />
         <option value="$PROJECT_DIR$/track/config.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -483,7 +475,7 @@
       <workItem from="1586305762829" duration="7134000" />
       <workItem from="1586368531750" duration="19623000" />
       <workItem from="1586392450163" duration="339000" />
-      <workItem from="1586396869535" duration="1390000" />
+      <workItem from="1586396869535" duration="1698000" />
     </task>
     <task id="LOCAL-00001" summary="Initial files + spot work">
       <created>1586383534839</created>
@@ -510,7 +502,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37202000" />
+    <option name="totallyTimeSpent" value="37510000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="236" y="23" width="2251" height="1385" extended-state="0" />
@@ -751,6 +743,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
         </state>
       </provider>
     </entry>
